@@ -376,7 +376,7 @@ def main():
                 defense_by_team[team].append(entry)
             
             for team_name, rankings in defense_by_team.items():
-                print(f"\n{team_name} Defensive Rankings (lower rank = better defense):")
+                print(f"\n{team_name} Defensive Rankings (lower rank = worse defense):")
                 
                 defense_map = {entry['Play_Type']: entry for entry in rankings}
                 
@@ -388,4 +388,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
